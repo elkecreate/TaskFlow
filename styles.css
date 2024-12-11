@@ -1,0 +1,168 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+}
+header .btn-add-task {
+    background-color: #03dac6;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+header .btn-add-task:hover {
+    background-color: #018786;
+}
+
+/* Formulário */
+.form-add-task {
+    margin: 1rem auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.hidden {
+    display: none;
+}
+.app__form-textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    height: 80px;
+}
+button[type="submit"] {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #3700b3;
+}
+
+/* Lista de Tarefas */
+.task-list {
+    margin: 1rem auto;
+    max-width: 600px;
+}
+.app__section-task-list {
+    margin-top: 1rem;
+}
+.app__section-task-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.app__section-task-list-item-description {
+    font-size: 1rem;
+    margin: 0;
+}
+.app_button-edit {
+    background-color: #03dac6;
+    border: none;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.app_button-edit:hover {
+    background-color: #018786;
+}
+.concluida {
+    text-decoration: line-through;
+    color: gray;
+}
+/* Estilo para a tarefa ativa */
+.app__section-task-list-item.ativa {
+    border: 2px solid #6200ea;
+    background-color: #f1f0ff;
+}
+/* Estilos para a tarefa ativa */
+.task-details {
+    margin-top: 20px;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-details h3 {
+    margin: 0;
+    color: #6200ea;
+}
+
+.task-details p {
+    color: #333;
+}
+/* Estilo para o cronômetro e o botão de iniciar foco */
+#task-timer {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #6200ea;
+}
+
+#start-timer {
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #6200ea;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-timer:hover {
+    background-color: #3700b3;
+}
+/* Estilo para o botão Limpar todas as tarefas */
+.btn-clear-tasks {
+    background-color: #ff1744;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.btn-clear-tasks:hover {
+    background-color: #d50032;
+}
+
+
+
